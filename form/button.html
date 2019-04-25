@@ -10,11 +10,7 @@
                 text: 'Click Me',
                 listeners: {
                     click: function() {
-                        Ext.Msg.prompt('Name', 'Please enter your name:', function(btn, text){
-                            if (btn == 'ok'){
-                                Ext.Msg.alert('Hello', 'Hello '+text);
-                            }
-                        });
+                        Ext.Msg.alert('Title', 'Basic message box in ExtJS');
                     }
                 }
             });

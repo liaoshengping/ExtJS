@@ -29,3 +29,6 @@
  Ext.MessageBox.alert('Tab one', 'Tab One was clicked.');
 ````
 - [表单](form/index.md)
+- [容器](container/index.md)
+- [列表](list/index.html)
+

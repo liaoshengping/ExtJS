@@ -10,12 +10,17 @@
                 text: 'Click Me',
                 listeners: {
                     click: function() {
-                        Ext.Msg.prompt('Name', 'Please enter your name:', function(btn, text){
-                            if (btn == 'ok'){
-                                Ext.Msg.alert('Hello', 'Hello '+text);
+                        Ext.MessageBox.confirm('Confirm', 'Are you sure you want to do this ?', callbackFunction);
+                        function callbackFunction(btn){
+                            if(btn == 'yes') {
+                                Ext.Msg.alert ('Button Click', 'You clicked the Yes button');
+                            } else {
+                                Ext.Msg.alert ('Button Click', 'You clicked the No button');
                             }
-                        });
+
+                        };
                     }
+
                 }
             });
         });
